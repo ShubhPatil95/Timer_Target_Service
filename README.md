@@ -7,11 +7,11 @@ sudo -s
 cd /lib/systemd/system
 nano Model.service
 ```
-### Step 2: Create Model.service [Model.service]()
+### Step 2: Create Model.service [Model.service](https://github.com/ShubhPatil95/Timer_Target_Service/blob/main/Model.service)
 
-### Step 3: Create Model.target [Model.target]()
+### Step 3: Create Model.target [Model.target](https://github.com/ShubhPatil95/Timer_Target_Service/blob/main/Model.target)
 
-### Step 4: Create Model.timer [Model.timer]()
+### Step 4: Create Model.timer [Model.timer](https://github.com/ShubhPatil95/Timer_Target_Service/blob/main/Model.timer)
 
 ### Step 5: Start the Model.timer and see if Model.service is activated
 ```bash
