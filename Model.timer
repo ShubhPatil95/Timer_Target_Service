@@ -1,0 +1,9 @@
+[Unit]
+Description= This is just description
+
+[Timer]
+OnCalendar=*-*-* 15:50:00
+Unit=Model.target
+
+[Install]
+WantedBy=timers.target
