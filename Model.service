@@ -1,0 +1,16 @@
+[Unit]
+Description=You can write your service description.
+
+[Service]
+ExecStart=/usr/bin/python3 /demo/python_files/file.py    # /usr/bin/python3 is the path where your python3 install(which python3 is the command to check that path)
+WorkingDirectory=/demo/python_files                      # This is the directory where you file.py is stored
+StandardOutput=syslog                                    # syslog path is /var/log you can use cat to open static file or tail -f syslog to check live files
+StandardError=syslog                                     # Whatever error our print statement in code will get stored in syslog
+SyslogIdentifier=name_of_model                           # It will help to identify your outputs in syslog files
+User=root                                                # default
+Group=root                                               # default
+Restart=on-failure                                       # on-failure, a;lways
+RestartSec=10s                                           # time after which it should be restart
+
+[Install]
+WantedBy=multi-user.target
