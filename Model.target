@@ -1,0 +1,4 @@
+[Unit]
+Description=Molde target                   # Just description
+Requires=Model.service                     # Hard dependancies/ wants are soft dependencies
+After=Model.service
